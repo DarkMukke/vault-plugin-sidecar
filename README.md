@@ -53,3 +53,4 @@ Environment Variables
 - VAULT_ADDR        : the vault address, eg `https://vault.default:8200` With Banzai you can also use the mutating  webhook for this : https://bank-vaults.dev/docs/mutating-webhook/configuration/
 - VAULT_SKIP_VERIFY : set to `true` if your vault tls cert is self-signed
 - SA_NAME           : the Service Account name, this app only works by authenticating via kubernetes auth. If you create your own deployment, make sure the SA is registered in vault and has sudo permissions on the [catalog path](https://developer.hashicorp.com/vault/api-docs/system/plugins-catalog#register-plugin)
+- ARCH              : defaults to `amd64`. To override this, set the ENV var.
