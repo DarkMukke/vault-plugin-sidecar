@@ -1,5 +1,7 @@
 # syntax=docker/dockerfile:1
 
+LABEL org.opencontainers.image.source=https://github.com/DarkMukke/vault-plugin-sidecar
+
 FROM golang:1.21 AS build-stage
 
 # Set destination for COPY
