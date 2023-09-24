@@ -19,7 +19,6 @@ RUN go test -v ./...
 
 # Deploy the application binary into a lean image
 FROM gcr.io/distroless/base-debian12 AS build-release-stage
-LABEL org.opencontainers.image.source=https://github.com/DarkMukke/vault-plugin-sidecar
 
 WORKDIR /
 
